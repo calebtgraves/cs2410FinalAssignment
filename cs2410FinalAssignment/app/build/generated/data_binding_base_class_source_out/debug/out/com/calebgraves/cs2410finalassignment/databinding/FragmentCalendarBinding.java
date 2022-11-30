@@ -4,6 +4,7 @@ package com.calebgraves.cs2410finalassignment.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +19,12 @@ import java.lang.String;
 public final class FragmentCalendarBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final ConstraintLayout addNewEvent;
+
+  @NonNull
+  public final ConstraintLayout calendarTopBar;
 
   @NonNull
   public final ConstraintLayout constraintLayout10;
@@ -173,6 +180,9 @@ public final class FragmentCalendarBinding implements ViewBinding {
   public final ConstraintLayout frameLayout;
 
   @NonNull
+  public final ImageView imageView2;
+
+  @NonNull
   public final ConstraintLayout linearLayout;
 
   @NonNull
@@ -239,9 +249,6 @@ public final class FragmentCalendarBinding implements ViewBinding {
   public final TextView textView29;
 
   @NonNull
-  public final TextView textView5;
-
-  @NonNull
   public final TextView textView6;
 
   @NonNull
@@ -254,6 +261,7 @@ public final class FragmentCalendarBinding implements ViewBinding {
   public final TextView textView9;
 
   private FragmentCalendarBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout addNewEvent, @NonNull ConstraintLayout calendarTopBar,
       @NonNull ConstraintLayout constraintLayout10, @NonNull ConstraintLayout constraintLayout11,
       @NonNull ConstraintLayout constraintLayout12, @NonNull ConstraintLayout constraintLayout13,
       @NonNull ConstraintLayout constraintLayout14, @NonNull ConstraintLayout constraintLayout15,
@@ -279,17 +287,19 @@ public final class FragmentCalendarBinding implements ViewBinding {
       @NonNull ConstraintLayout constraintLayout55, @NonNull ConstraintLayout constraintLayout56,
       @NonNull ConstraintLayout constraintLayout6, @NonNull ConstraintLayout constraintLayout7,
       @NonNull ConstraintLayout constraintLayout8, @NonNull ConstraintLayout constraintLayout9,
-      @NonNull ConstraintLayout frameLayout, @NonNull ConstraintLayout linearLayout,
-      @NonNull ConstraintLayout separationBar, @NonNull TextView textView10,
-      @NonNull TextView textView11, @NonNull TextView textView12, @NonNull TextView textView13,
-      @NonNull TextView textView14, @NonNull TextView textView15, @NonNull TextView textView16,
-      @NonNull TextView textView17, @NonNull TextView textView18, @NonNull TextView textView19,
-      @NonNull TextView textView20, @NonNull TextView textView21, @NonNull TextView textView22,
-      @NonNull TextView textView23, @NonNull TextView textView24, @NonNull TextView textView25,
-      @NonNull TextView textView26, @NonNull TextView textView27, @NonNull TextView textView28,
-      @NonNull TextView textView29, @NonNull TextView textView5, @NonNull TextView textView6,
+      @NonNull ConstraintLayout frameLayout, @NonNull ImageView imageView2,
+      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout separationBar,
+      @NonNull TextView textView10, @NonNull TextView textView11, @NonNull TextView textView12,
+      @NonNull TextView textView13, @NonNull TextView textView14, @NonNull TextView textView15,
+      @NonNull TextView textView16, @NonNull TextView textView17, @NonNull TextView textView18,
+      @NonNull TextView textView19, @NonNull TextView textView20, @NonNull TextView textView21,
+      @NonNull TextView textView22, @NonNull TextView textView23, @NonNull TextView textView24,
+      @NonNull TextView textView25, @NonNull TextView textView26, @NonNull TextView textView27,
+      @NonNull TextView textView28, @NonNull TextView textView29, @NonNull TextView textView6,
       @NonNull TextView textView7, @NonNull TextView textView8, @NonNull TextView textView9) {
     this.rootView = rootView;
+    this.addNewEvent = addNewEvent;
+    this.calendarTopBar = calendarTopBar;
     this.constraintLayout10 = constraintLayout10;
     this.constraintLayout11 = constraintLayout11;
     this.constraintLayout12 = constraintLayout12;
@@ -341,6 +351,7 @@ public final class FragmentCalendarBinding implements ViewBinding {
     this.constraintLayout8 = constraintLayout8;
     this.constraintLayout9 = constraintLayout9;
     this.frameLayout = frameLayout;
+    this.imageView2 = imageView2;
     this.linearLayout = linearLayout;
     this.separationBar = separationBar;
     this.textView10 = textView10;
@@ -363,7 +374,6 @@ public final class FragmentCalendarBinding implements ViewBinding {
     this.textView27 = textView27;
     this.textView28 = textView28;
     this.textView29 = textView29;
-    this.textView5 = textView5;
     this.textView6 = textView6;
     this.textView7 = textView7;
     this.textView8 = textView8;
@@ -397,6 +407,18 @@ public final class FragmentCalendarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addNewEvent;
+      ConstraintLayout addNewEvent = ViewBindings.findChildViewById(rootView, id);
+      if (addNewEvent == null) {
+        break missingId;
+      }
+
+      id = R.id.calendarTopBar;
+      ConstraintLayout calendarTopBar = ViewBindings.findChildViewById(rootView, id);
+      if (calendarTopBar == null) {
+        break missingId;
+      }
+
       id = R.id.constraintLayout10;
       ConstraintLayout constraintLayout10 = ViewBindings.findChildViewById(rootView, id);
       if (constraintLayout10 == null) {
@@ -699,6 +721,12 @@ public final class FragmentCalendarBinding implements ViewBinding {
 
       ConstraintLayout frameLayout = (ConstraintLayout) rootView;
 
+      id = R.id.imageView2;
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView2 == null) {
+        break missingId;
+      }
+
       id = R.id.linearLayout;
       ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout == null) {
@@ -831,12 +859,6 @@ public final class FragmentCalendarBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView5;
-      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
-      if (textView5 == null) {
-        break missingId;
-      }
-
       id = R.id.textView6;
       TextView textView6 = ViewBindings.findChildViewById(rootView, id);
       if (textView6 == null) {
@@ -861,24 +883,24 @@ public final class FragmentCalendarBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCalendarBinding((ConstraintLayout) rootView, constraintLayout10,
-          constraintLayout11, constraintLayout12, constraintLayout13, constraintLayout14,
-          constraintLayout15, constraintLayout16, constraintLayout17, constraintLayout18,
-          constraintLayout19, constraintLayout20, constraintLayout21, constraintLayout22,
-          constraintLayout23, constraintLayout24, constraintLayout25, constraintLayout26,
-          constraintLayout27, constraintLayout28, constraintLayout29, constraintLayout30,
-          constraintLayout33, constraintLayout34, constraintLayout35, constraintLayout36,
-          constraintLayout37, constraintLayout38, constraintLayout39, constraintLayout40,
-          constraintLayout41, constraintLayout42, constraintLayout43, constraintLayout44,
-          constraintLayout45, constraintLayout46, constraintLayout47, constraintLayout48,
-          constraintLayout49, constraintLayout5, constraintLayout50, constraintLayout51,
-          constraintLayout52, constraintLayout53, constraintLayout54, constraintLayout55,
-          constraintLayout56, constraintLayout6, constraintLayout7, constraintLayout8,
-          constraintLayout9, frameLayout, linearLayout, separationBar, textView10, textView11,
-          textView12, textView13, textView14, textView15, textView16, textView17, textView18,
-          textView19, textView20, textView21, textView22, textView23, textView24, textView25,
-          textView26, textView27, textView28, textView29, textView5, textView6, textView7,
-          textView8, textView9);
+      return new FragmentCalendarBinding((ConstraintLayout) rootView, addNewEvent, calendarTopBar,
+          constraintLayout10, constraintLayout11, constraintLayout12, constraintLayout13,
+          constraintLayout14, constraintLayout15, constraintLayout16, constraintLayout17,
+          constraintLayout18, constraintLayout19, constraintLayout20, constraintLayout21,
+          constraintLayout22, constraintLayout23, constraintLayout24, constraintLayout25,
+          constraintLayout26, constraintLayout27, constraintLayout28, constraintLayout29,
+          constraintLayout30, constraintLayout33, constraintLayout34, constraintLayout35,
+          constraintLayout36, constraintLayout37, constraintLayout38, constraintLayout39,
+          constraintLayout40, constraintLayout41, constraintLayout42, constraintLayout43,
+          constraintLayout44, constraintLayout45, constraintLayout46, constraintLayout47,
+          constraintLayout48, constraintLayout49, constraintLayout5, constraintLayout50,
+          constraintLayout51, constraintLayout52, constraintLayout53, constraintLayout54,
+          constraintLayout55, constraintLayout56, constraintLayout6, constraintLayout7,
+          constraintLayout8, constraintLayout9, frameLayout, imageView2, linearLayout,
+          separationBar, textView10, textView11, textView12, textView13, textView14, textView15,
+          textView16, textView17, textView18, textView19, textView20, textView21, textView22,
+          textView23, textView24, textView25, textView26, textView27, textView28, textView29,
+          textView6, textView7, textView8, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

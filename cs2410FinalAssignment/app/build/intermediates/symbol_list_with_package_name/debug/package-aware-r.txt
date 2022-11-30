@@ -2603,6 +2603,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_add_circle_24
 drawable ic_baseline_arrow_back_24
 drawable ic_baseline_arrow_back_ios_new_24
 drawable ic_baseline_calendar_today_24
@@ -2769,6 +2770,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addNewEvent
 id alertTitle
 id aligned
 id all
@@ -2801,6 +2803,7 @@ id buttonPanel
 id cache_measures
 id calendarFragment
 id calendarIcon
+id calendarTopBar
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -2981,6 +2984,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id immediateStop
 id included
 id indeterminate
@@ -3229,7 +3233,6 @@ id textView28
 id textView29
 id textView3
 id textView4
-id textView5
 id textView6
 id textView7
 id textView8
