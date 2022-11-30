@@ -10,22 +10,39 @@
         android:name="com.calebgraves.cs2410finalassignment.CalendarFragment"
         android:label="fragment_calendar"
         tools:layout="@layout/fragment_calendar" />
-    <action android:id="@+id/action_global_calendarFragment" app:destination="@id/calendarFragment" />
+    <action
+        android:id="@+id/action_global_calendarFragment"
+        app:destination="@id/calendarFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
     <fragment
         android:id="@+id/goalsFragment"
         android:name="com.calebgraves.cs2410finalassignment.GoalsFragment"
         android:label="fragment_goals"
         tools:layout="@layout/fragment_goals" />
-    <action android:id="@+id/action_global_goalsFragment" app:destination="@id/goalsFragment" />
+    <action
+        android:id="@+id/action_global_goalsFragment"
+        app:destination="@id/goalsFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
     <fragment
         android:id="@+id/journalFragment"
         android:name="com.calebgraves.cs2410finalassignment.JournalFragment"
         android:label="fragment_journal"
         tools:layout="@layout/fragment_journal" />
-    <action android:id="@+id/action_global_journalFragment" app:destination="@id/journalFragment" />
+    <action
+        android:id="@+id/action_global_journalFragment"
+        app:destination="@id/journalFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.calebgraves.cs2410finalassignment.SettingsFragment"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" /><action android:id="@+id/action_global_settingsFragment" app:destination="@id/settingsFragment"/>
+        tools:layout="@layout/fragment_settings" />
+    <action
+        android:id="@+id/action_global_settingsFragment"
+        app:destination="@id/settingsFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
 </navigation>

@@ -2605,6 +2605,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_baseline_calendar_today_24
 drawable ic_baseline_edit_note_24
+drawable ic_baseline_event_note_24
 drawable ic_baseline_settings_24
 drawable ic_baseline_star_border_24
 drawable ic_clock_black_24dp
@@ -2618,6 +2619,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_outline_settings_24
+drawable ic_outline_sticky_note_2_24
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2795,6 +2798,7 @@ id bounceStart
 id buttonPanel
 id cache_measures
 id calendarFragment
+id calendarIcon
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -2854,6 +2858,9 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id dividingBarLeft
+id dividingBarMiddle
+id dividingBarRight
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -2918,8 +2925,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
-id imageView2
 id immediateStop
 id included
 id indeterminate
@@ -2929,6 +2934,7 @@ id inward
 id italic
 id item_touch_helper_previous_elevation
 id journalFragment
+id journalIcon
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3141,6 +3147,10 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
