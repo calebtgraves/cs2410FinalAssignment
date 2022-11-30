@@ -31,6 +31,12 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout2;
 
   @NonNull
+  public final ConstraintLayout constraintLayout3;
+
+  @NonNull
+  public final TextView currentPage;
+
+  @NonNull
   public final ConstraintLayout dividingBarLeft;
 
   @NonNull
@@ -44,6 +50,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final ImageView goalsIcon;
+
+  @NonNull
+  public final ImageView imageView;
 
   @NonNull
   public final ImageView journalIcon;
@@ -77,22 +86,27 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView calendarIcon,
       @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout2,
+      @NonNull ConstraintLayout constraintLayout3, @NonNull TextView currentPage,
       @NonNull ConstraintLayout dividingBarLeft, @NonNull ConstraintLayout dividingBarMiddle,
       @NonNull ConstraintLayout dividingBarRight,
       @NonNull FragmentContainerView fragmentContainerView, @NonNull ImageView goalsIcon,
-      @NonNull ImageView journalIcon, @NonNull ImageView settingsIcon, @NonNull TextView textView,
-      @NonNull TextView textView2, @NonNull TextView textView3, @NonNull TextView textView4,
-      @NonNull ConstraintLayout toCalendar, @NonNull ConstraintLayout toGoals,
-      @NonNull ConstraintLayout toJournal, @NonNull ConstraintLayout toSettings) {
+      @NonNull ImageView imageView, @NonNull ImageView journalIcon, @NonNull ImageView settingsIcon,
+      @NonNull TextView textView, @NonNull TextView textView2, @NonNull TextView textView3,
+      @NonNull TextView textView4, @NonNull ConstraintLayout toCalendar,
+      @NonNull ConstraintLayout toGoals, @NonNull ConstraintLayout toJournal,
+      @NonNull ConstraintLayout toSettings) {
     this.rootView = rootView;
     this.calendarIcon = calendarIcon;
     this.constraintLayout = constraintLayout;
     this.constraintLayout2 = constraintLayout2;
+    this.constraintLayout3 = constraintLayout3;
+    this.currentPage = currentPage;
     this.dividingBarLeft = dividingBarLeft;
     this.dividingBarMiddle = dividingBarMiddle;
     this.dividingBarRight = dividingBarRight;
     this.fragmentContainerView = fragmentContainerView;
     this.goalsIcon = goalsIcon;
+    this.imageView = imageView;
     this.journalIcon = journalIcon;
     this.settingsIcon = settingsIcon;
     this.textView = textView;
@@ -150,6 +164,18 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.constraintLayout3;
+      ConstraintLayout constraintLayout3 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout3 == null) {
+        break missingId;
+      }
+
+      id = R.id.currentPage;
+      TextView currentPage = ViewBindings.findChildViewById(rootView, id);
+      if (currentPage == null) {
+        break missingId;
+      }
+
       id = R.id.dividingBarLeft;
       ConstraintLayout dividingBarLeft = ViewBindings.findChildViewById(rootView, id);
       if (dividingBarLeft == null) {
@@ -177,6 +203,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.goalsIcon;
       ImageView goalsIcon = ViewBindings.findChildViewById(rootView, id);
       if (goalsIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
         break missingId;
       }
 
@@ -241,9 +273,9 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, calendarIcon, constraintLayout,
-          constraintLayout2, dividingBarLeft, dividingBarMiddle, dividingBarRight,
-          fragmentContainerView, goalsIcon, journalIcon, settingsIcon, textView, textView2,
-          textView3, textView4, toCalendar, toGoals, toJournal, toSettings);
+          constraintLayout2, constraintLayout3, currentPage, dividingBarLeft, dividingBarMiddle,
+          dividingBarRight, fragmentContainerView, goalsIcon, imageView, journalIcon, settingsIcon,
+          textView, textView2, textView3, textView4, toCalendar, toGoals, toJournal, toSettings);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
