@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-44:/layout/activity_main.xml",
+        "source": "com.calebgraves.cs2410finalassignment.app-main-47:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-44:/layout/fragment_journal.xml",
+        "source": "com.calebgraves.cs2410finalassignment.app-main-47:/layout/fragment_journal.xml"
+    },
+    {
+        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-44:/layout/fragment_settings.xml",
+        "source": "com.calebgraves.cs2410finalassignment.app-main-47:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-44:/layout/fragment_goals.xml",
+        "source": "com.calebgraves.cs2410finalassignment.app-main-47:/layout/fragment_goals.xml"
+    },
+    {
+        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-44:/layout/fragment_calendar.xml",
+        "source": "com.calebgraves.cs2410finalassignment.app-main-47:/layout/fragment_calendar.xml"
+    }
+]

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calendarFragment">
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.calebgraves.cs2410finalassignment.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <action android:id="@+id/action_global_calendarFragment" app:destination="@id/calendarFragment" />
+    <fragment
+        android:id="@+id/goalsFragment"
+        android:name="com.calebgraves.cs2410finalassignment.GoalsFragment"
+        android:label="fragment_goals"
+        tools:layout="@layout/fragment_goals" />
+    <action android:id="@+id/action_global_goalsFragment" app:destination="@id/goalsFragment" />
+    <fragment
+        android:id="@+id/journalFragment"
+        android:name="com.calebgraves.cs2410finalassignment.JournalFragment"
+        android:label="fragment_journal"
+        tools:layout="@layout/fragment_journal" />
+    <action android:id="@+id/action_global_journalFragment" app:destination="@id/journalFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.calebgraves.cs2410finalassignment.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" /><action android:id="@+id/action_global_settingsFragment" app:destination="@id/settingsFragment"/>
+</navigation>
