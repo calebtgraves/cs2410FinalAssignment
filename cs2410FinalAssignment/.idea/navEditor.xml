@@ -23,6 +23,11 @@
                       <LayoutPositions />
                     </value>
                   </entry>
+                  <entry key="action_global_settingsFragment">
+                    <value>
+                      <LayoutPositions />
+                    </value>
+                  </entry>
                   <entry key="calendarFragment">
                     <value>
                       <LayoutPositions>
@@ -47,6 +52,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="journalEntryFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="474" />
+                            <option name="y" value="-312" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="journalFragment">
                     <value>
                       <LayoutPositions>
@@ -55,6 +72,15 @@
                             <option name="x" value="439" />
                             <option name="y" value="43" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_journalFragment_to_journalEntryFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

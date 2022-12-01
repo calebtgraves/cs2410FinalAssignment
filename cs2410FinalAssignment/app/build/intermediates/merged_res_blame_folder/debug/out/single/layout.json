@@ -12,6 +12,14 @@
         "source": "C:\\Users\\caleb\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-47:\\layout\\calendar_day_list_item.xml"
     },
     {
+        "merged": "C:\\Users\\caleb\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-44:\\layout\\journal_list_item.xml",
+        "source": "C:\\Users\\caleb\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-47:\\layout\\journal_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-44:\\layout\\fragment_journal_entry.xml",
+        "source": "C:\\Users\\caleb\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-47:\\layout\\fragment_journal_entry.xml"
+    },
+    {
         "merged": "C:\\Users\\caleb\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-44:\\layout\\activity_main.xml",
         "source": "C:\\Users\\caleb\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-47:\\layout\\activity_main.xml"
     },
