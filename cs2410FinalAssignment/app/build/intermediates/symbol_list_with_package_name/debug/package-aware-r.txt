@@ -2984,7 +2984,6 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView2
 id immediateStop
 id included
 id indeterminate
@@ -3005,7 +3004,6 @@ id legacy
 id line1
 id line3
 id linear
-id linearLayout
 id listMode
 id list_item
 id locale
@@ -3114,6 +3112,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3128,6 +3127,7 @@ id sawtooth
 id scale
 id screen
 id scroll
+id scrollConstraintLayout
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
@@ -3413,6 +3413,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout calendar_day_list_item
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

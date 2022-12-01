@@ -89,11 +89,12 @@ id frameLayout
 id goalsFragment
 id goalsIcon
 id imageView
-id imageView2
 id journalFragment
 id journalIcon
-id linearLayout
 id nav_graph
+id recyclerView
+id scrollConstraintLayout
+id scrollView
 id separationBar
 id settingsFragment
 id settingsIcon
@@ -130,6 +131,7 @@ id toGoals
 id toJournal
 id toSettings
 layout activity_main
+layout calendar_day_list_item
 layout fragment_calendar
 layout fragment_goals
 layout fragment_journal
