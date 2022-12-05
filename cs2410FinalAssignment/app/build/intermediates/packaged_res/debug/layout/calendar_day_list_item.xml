@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollParent"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -22,7 +23,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/separationBar"
-                android:layout_width="4px"
+                android:layout_width="1dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="4dp"
                 android:background="@color/whale_blue"
@@ -47,7 +48,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout30"
                     android:layout_width="0dp"
-                    android:layout_height="88px"
+                    android:layout_height="36dp"
                     android:layout_marginEnd="2dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +59,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout33"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +81,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout34"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +103,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout35"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +125,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout36"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -146,7 +147,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout37"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -168,7 +169,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout38"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -190,7 +191,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout39"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -212,7 +213,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout40"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -234,7 +235,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout41"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -256,7 +257,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout42"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -280,7 +281,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout43"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -302,7 +303,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout44"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -324,7 +325,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout45"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -346,7 +347,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout46"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -368,7 +369,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout47"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -390,7 +391,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout48"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -412,7 +413,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout49"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -434,7 +435,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout50"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -456,7 +457,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout51"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -478,7 +479,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout52"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -500,7 +501,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout53"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -522,7 +523,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout54"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -544,7 +545,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout55"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -566,7 +567,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout56"
                     android:layout_width="0dp"
-                    android:layout_height="180px"
+                    android:layout_height="72dp"
                     android:background="@color/whale_blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -589,7 +590,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout5"
-                android:layout_width="110px"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -598,8 +599,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout6"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -619,8 +620,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout7"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
@@ -641,8 +642,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout8"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
@@ -663,8 +664,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout9"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout8"
@@ -685,8 +686,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout10"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout9"
@@ -707,8 +708,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout11"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"
@@ -729,8 +730,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout12"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout11"
@@ -751,8 +752,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout13"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout12"
@@ -773,8 +774,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout14"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout13"
@@ -795,8 +796,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout15"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout14"
@@ -817,8 +818,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout16"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout15"
@@ -839,8 +840,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout17"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout16"
@@ -861,8 +862,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout18"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout17"
@@ -883,8 +884,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout19"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout18"
@@ -905,8 +906,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout20"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout19"
@@ -927,8 +928,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout21"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
@@ -949,8 +950,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout22"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout21"
@@ -971,8 +972,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout23"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout22"
@@ -993,8 +994,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout24"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout23"
@@ -1015,8 +1016,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout25"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout24"
@@ -1037,8 +1038,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout26"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout25"
@@ -1059,8 +1060,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout27"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout26"
@@ -1081,8 +1082,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout28"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout27"
@@ -1103,8 +1104,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout29"
-                    android:layout_width="100px"
-                    android:layout_height="180px"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout28"

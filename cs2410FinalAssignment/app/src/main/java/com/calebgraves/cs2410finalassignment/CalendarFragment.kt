@@ -26,6 +26,7 @@ class CalendarFragment : Fragment() {
         snapHelper.attachToRecyclerView(binding.recyclerView)
         binding.recyclerView.scrollToPosition(150)
 
+
         return binding.root
     }
 }

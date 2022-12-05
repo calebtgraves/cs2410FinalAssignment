@@ -109,6 +109,7 @@ id journalRecyclerView
 id nav_graph
 id recyclerView
 id scrollConstraintLayout
+id scrollParent
 id scrollView
 id separationBar
 id settingsFragment
