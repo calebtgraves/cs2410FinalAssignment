@@ -3,15 +3,16 @@ package com.calebgraves.cs2410finalassignment.models
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.time.LocalDateTime
 import java.util.*
 
-@Entity
+@Entity(tableName = "events")
 data class Event(
     @PrimaryKey(autoGenerate = true) var id: Long,
     @ColumnInfo var title: String,
     @ColumnInfo var category: String,
     @ColumnInfo var description: String,
-    @ColumnInfo var startDate: Date,
-    @ColumnInfo var endDate: Date,
-    @ColumnInfo var repeatingSeries: Integer,
+    @ColumnInfo var startDate: LocalDateTime,
+    @ColumnInfo var endDate: LocalDateTime,
+    @ColumnInfo var repeatingSeries: Int,
 )

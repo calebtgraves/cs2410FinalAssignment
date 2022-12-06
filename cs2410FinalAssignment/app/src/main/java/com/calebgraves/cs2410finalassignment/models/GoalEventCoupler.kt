@@ -5,9 +5,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity
+@Entity(primaryKeys = ["goalId", "eventId"])
 data class GoalEventCoupler(
-    @PrimaryKey(autoGenerate = true) var id: Long,
-    @ColumnInfo var goalId: Long,
-    @ColumnInfo var eventId: Long,
+    val goalId: Long,
+    val eventId: Long,
 )
