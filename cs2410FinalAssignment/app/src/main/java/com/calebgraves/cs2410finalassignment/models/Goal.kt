@@ -12,6 +12,6 @@ data class Goal(
     @ColumnInfo var title: String,
     @ColumnInfo var category: String,
     @ColumnInfo var description: String,
-    @ColumnInfo var startDate: LocalDate,
-    @ColumnInfo var endDate: LocalDate,
+    @ColumnInfo var startDate: Long,
+    @ColumnInfo var endDate: Long,
 )

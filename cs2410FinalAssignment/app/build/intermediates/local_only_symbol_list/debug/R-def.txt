@@ -28,6 +28,7 @@ id action_global_goalsFragment
 id action_global_journalFragment
 id action_global_settingsFragment
 id action_journalFragment_to_journalEntryFragment
+id addGoal
 id addJournalEntry
 id addNewEvent
 id calendarFragment
@@ -95,8 +96,11 @@ id dividingBarRight
 id editJournalEntry
 id entryContentPreview
 id entryDate
+id eventDate
+id eventTitle
 id fragmentContainerView
 id frameLayout
+id goalRecyclerView
 id goalsFragment
 id goalsIcon
 id imageView
@@ -148,11 +152,13 @@ id toJournal
 id toSettings
 layout activity_main
 layout calendar_day_list_item
+layout event_list_item
 layout fragment_calendar
 layout fragment_goals
 layout fragment_journal
 layout fragment_journal_entry
 layout fragment_settings
+layout goal_list_item
 layout journal_list_item
 mipmap ic_launcher
 mipmap ic_launcher_round

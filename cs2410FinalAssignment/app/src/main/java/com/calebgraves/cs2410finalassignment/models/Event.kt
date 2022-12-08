@@ -12,7 +12,7 @@ data class Event(
     @ColumnInfo var title: String,
     @ColumnInfo var category: String,
     @ColumnInfo var description: String,
-    @ColumnInfo var startDate: LocalDateTime,
-    @ColumnInfo var endDate: LocalDateTime,
+    @ColumnInfo var startDate: Long,
+    @ColumnInfo var endDate: Long,
     @ColumnInfo var repeatingSeries: Int,
 )

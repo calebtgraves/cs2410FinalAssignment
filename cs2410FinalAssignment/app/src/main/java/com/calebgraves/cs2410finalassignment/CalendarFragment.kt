@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.SnapHelper
+import com.calebgraves.cs2410finalassignment.Adapters.CalendarDayAdapter
 import com.calebgraves.cs2410finalassignment.databinding.FragmentCalendarBinding
 
 class CalendarFragment : Fragment() {

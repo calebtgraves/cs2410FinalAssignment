@@ -4,25 +4,43 @@ package com.calebgraves.cs2410finalassignment.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.calebgraves.cs2410finalassignment.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentGoalsBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final ConstraintLayout rootView;
 
-  private FragmentGoalsBinding(@NonNull FrameLayout rootView) {
+  @NonNull
+  public final FloatingActionButton addGoal;
+
+  @NonNull
+  public final RecyclerView goalRecyclerView;
+
+  @NonNull
+  public final ConstraintLayout journalLayout;
+
+  private FragmentGoalsBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FloatingActionButton addGoal, @NonNull RecyclerView goalRecyclerView,
+      @NonNull ConstraintLayout journalLayout) {
     this.rootView = rootView;
+    this.addGoal = addGoal;
+    this.goalRecyclerView = goalRecyclerView;
+    this.journalLayout = journalLayout;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +61,28 @@ public final class FragmentGoalsBinding implements ViewBinding {
 
   @NonNull
   public static FragmentGoalsBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.addGoal;
+      FloatingActionButton addGoal = ViewBindings.findChildViewById(rootView, id);
+      if (addGoal == null) {
+        break missingId;
+      }
 
-    return new FragmentGoalsBinding((FrameLayout) rootView);
+      id = R.id.goalRecyclerView;
+      RecyclerView goalRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (goalRecyclerView == null) {
+        break missingId;
+      }
+
+      ConstraintLayout journalLayout = (ConstraintLayout) rootView;
+
+      return new FragmentGoalsBinding((ConstraintLayout) rootView, addGoal, goalRecyclerView,
+          journalLayout);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }
