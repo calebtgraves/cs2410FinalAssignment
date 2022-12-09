@@ -16,7 +16,7 @@ class GoalCreationViewModel: ViewModel() {
     fun createGoal(title: String, category: String, description: String, startDate: Long, endDate: Long) {
         errorMessage.value = ""
         viewModelScope.launch {
-            val goal: Goal = Goal(0, title, category, description, startDate.toLong(), endDate.toLong())
+            val goal = Goal(0, title, category, description, startDate.toLong(), endDate.toLong())
             GoalsRepository.createGoal(goal)
             done.value = true
         }

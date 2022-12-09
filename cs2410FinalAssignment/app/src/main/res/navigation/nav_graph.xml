@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/calendarFragment"
-        android:name="com.calebgraves.cs2410finalassignment.CalendarFragment"
+        android:name="com.calebgraves.cs2410finalassignment.fragments.CalendarFragment"
         android:label="fragment_calendar"
         tools:layout="@layout/fragment_calendar" />
     <action
@@ -17,12 +17,16 @@
         app:exitAnim="@anim/nav_default_exit_anim" />
     <fragment
         android:id="@+id/goalsFragment"
-        android:name="com.calebgraves.cs2410finalassignment.GoalsFragment"
+        android:name="com.calebgraves.cs2410finalassignment.fragments.GoalsFragment"
         android:label="fragment_goals"
         tools:layout="@layout/fragment_goals" >
         <action
             android:id="@+id/goals_to_goal_creation"
             app:destination="@id/goalCreationFragment" />
+        <action
+            android:id="@+id/goals_to_goal"
+            app:destination="@id/goalFragment" >
+        </action>
     </fragment>
     <action
         android:id="@+id/action_global_goalsFragment"
@@ -31,7 +35,7 @@
         app:exitAnim="@anim/nav_default_exit_anim" />
     <fragment
         android:id="@+id/journalFragment"
-        android:name="com.calebgraves.cs2410finalassignment.JournalFragment"
+        android:name="com.calebgraves.cs2410finalassignment.fragments.JournalFragment"
         android:label="fragment_journal"
         tools:layout="@layout/fragment_journal" >
         <action
@@ -48,7 +52,7 @@
         app:exitAnim="@anim/nav_default_exit_anim" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.calebgraves.cs2410finalassignment.SettingsFragment"
+        android:name="com.calebgraves.cs2410finalassignment.fragments.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
     <action
@@ -58,12 +62,12 @@
         app:exitAnim="@anim/nav_default_exit_anim" />
     <fragment
         android:id="@+id/journalEntryFragment"
-        android:name="com.calebgraves.cs2410finalassignment.JournalEntryFragment"
+        android:name="com.calebgraves.cs2410finalassignment.fragments.JournalEntryFragment"
         android:label="fragment_journal_entry"
         tools:layout="@layout/fragment_journal_entry" />
     <fragment
         android:id="@+id/goalCreationFragment"
-        android:name="com.calebgraves.cs2410finalassignment.GoalCreationFragment"
+        android:name="com.calebgraves.cs2410finalassignment.fragments.GoalCreationFragment"
         android:label="fragment_goal_creation"
         tools:layout="@layout/fragment_goal_creation" >
         <action
@@ -72,11 +76,32 @@
     </fragment>
     <fragment
         android:id="@+id/journalEntryCreationFragment"
-        android:name="com.calebgraves.cs2410finalassignment.JournalEntryCreationFragment"
+        android:name="com.calebgraves.cs2410finalassignment.fragments.JournalEntryCreationFragment"
         android:label="fragment_journal_entry_creation"
         tools:layout="@layout/fragment_journal_entry_creation" >
         <action
             android:id="@+id/journal_entry_creation_to_journal"
             app:destination="@id/journalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalFragment"
+        android:name="com.calebgraves.cs2410finalassignment.fragments.GoalFragment"
+        android:label="fragment_goal"
+        tools:layout="@layout/fragment_goal" >
+        <action
+            android:id="@+id/goal_to_goal_editor"
+            app:destination="@id/goalEditor" />
+        <action
+            android:id="@+id/goal_to_goals"
+            app:destination="@id/goalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalEditor"
+        android:name="com.calebgraves.cs2410finalassignment.fragments.GoalEditorFragment"
+        android:label="fragment_goal_editor"
+        tools:layout="@layout/fragment_goal_editor" >
+        <action
+            android:id="@+id/goal_editor_to_goal"
+            app:destination="@id/goalFragment" />
     </fragment>
 </navigation>

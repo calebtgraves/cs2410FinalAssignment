@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GoalCreationFragment">
+    tools:context=".fragments.GoalCreationFragment">
 
     <TextView
         android:id="@+id/textView31"
@@ -15,7 +15,7 @@
         android:text="Description:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+        app:layout_constraintTop_toBottomOf="@+id/goalEndDateField" />
 
     <EditText
         android:id="@+id/goalCategoryField"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/goalTitleField" />
 
     <Button
-        android:id="@+id/createGoalButton"
+        android:id="@+id/createGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -82,9 +82,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Start Date:"
-        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintBottom_toBottomOf="@+id/goalStartDateField"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView34" />
+        app:layout_constraintTop_toTopOf="@+id/goalStartDateField" />
 
     <TextView
         android:id="@+id/textView33"
@@ -92,12 +92,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="End Date:"
-        app:layout_constraintBottom_toBottomOf="@+id/textView35"
+        app:layout_constraintBottom_toBottomOf="@+id/goalEndDateField"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView35" />
+        app:layout_constraintTop_toTopOf="@+id/goalEndDateField" />
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/goalStartDateField"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -111,7 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/goalCategoryField" />
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/goalEndDateField"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -122,7 +122,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView33"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        app:layout_constraintTop_toBottomOf="@+id/goalStartDateField" />
 
     <EditText
         android:id="@+id/goalDescriptionField"
@@ -133,8 +133,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
         android:ems="10"
-        android:inputType="textLongMessage|none"
-        app:layout_constraintBottom_toTopOf="@+id/createGoalButton"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/createGoal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView31" />
