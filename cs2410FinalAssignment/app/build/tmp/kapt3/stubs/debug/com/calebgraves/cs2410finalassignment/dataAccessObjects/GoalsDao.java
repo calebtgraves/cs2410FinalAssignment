@@ -13,7 +13,7 @@ public abstract interface GoalsDao {
     kotlin.coroutines.Continuation<? super java.lang.Long> continuation);
     
     @org.jetbrains.annotations.Nullable()
-    @androidx.room.Query(value = "SELECT * FROM events")
+    @androidx.room.Query(value = "SELECT * FROM goals")
     public abstract java.lang.Object allGoals(@org.jetbrains.annotations.NotNull()
     kotlin.coroutines.Continuation<? super java.util.List<com.calebgraves.cs2410finalassignment.models.Goal>> continuation);
     

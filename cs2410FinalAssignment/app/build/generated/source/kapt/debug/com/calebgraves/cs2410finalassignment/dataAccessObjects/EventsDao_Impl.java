@@ -110,7 +110,7 @@ public final class EventsDao_Impl implements EventsDao {
   }
 
   @Override
-  public Object createEvent(final Event event, final Continuation<? super Long> continuation) {
+  public Object createEvent(final Event event, final Continuation<? super Long> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Long>() {
       @Override
       public Long call() throws Exception {
@@ -123,11 +123,11 @@ public final class EventsDao_Impl implements EventsDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
-  public Object deleteEvent(final Event event, final Continuation<? super Unit> continuation) {
+  public Object deleteEvent(final Event event, final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -140,11 +140,11 @@ public final class EventsDao_Impl implements EventsDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
-  public Object updateEvent(final Event event, final Continuation<? super Unit> continuation) {
+  public Object updateEvent(final Event event, final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -157,11 +157,11 @@ public final class EventsDao_Impl implements EventsDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
-  public Object allEvents(final Continuation<? super List<Event>> continuation) {
+  public Object allEvents(final Continuation<? super List<Event>> arg0) {
     final String _sql = "SELECT * FROM events";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
@@ -215,12 +215,12 @@ public final class EventsDao_Impl implements EventsDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, arg0);
   }
 
   @Override
   public Object getAllRepeats(final int repeatingSeriesId,
-      final Continuation<? super List<Event>> continuation) {
+      final Continuation<? super List<Event>> arg1) {
     final String _sql = "SELECT * FROM events WHERE repeatingSeries = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -276,12 +276,12 @@ public final class EventsDao_Impl implements EventsDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
   public Object getFollowingRepeats(final int repeatingSeriesId, final long eventDate,
-      final Continuation<? super List<Event>> continuation) {
+      final Continuation<? super List<Event>> arg2) {
     final String _sql = "SELECT * FROM events WHERE repeatingSeries = ? AND startDate >= ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
     int _argIndex = 1;
@@ -339,11 +339,11 @@ public final class EventsDao_Impl implements EventsDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, arg2);
   }
 
   @Override
-  public Object eventById(final long id, final Continuation<? super Event> continuation) {
+  public Object eventById(final long id, final Continuation<? super Event> arg1) {
     final String _sql = "SELECT * FROM events WHERE id = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -399,11 +399,11 @@ public final class EventsDao_Impl implements EventsDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
-  public Object eventsForDay(final long day, final Continuation<? super List<Event>> continuation) {
+  public Object eventsForDay(final long day, final Continuation<? super List<Event>> arg1) {
     final String _sql = "SELECT * FROM events WHERE startDate <= ? AND endDate >= ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
     int _argIndex = 1;
@@ -461,7 +461,7 @@ public final class EventsDao_Impl implements EventsDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   public static List<Class<?>> getRequiredConverters() {

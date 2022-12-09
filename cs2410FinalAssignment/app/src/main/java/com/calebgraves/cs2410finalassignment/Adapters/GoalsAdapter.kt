@@ -5,12 +5,13 @@ import android.view.ViewGroup
 import androidx.databinding.ObservableArrayList
 import androidx.databinding.ObservableList
 import androidx.recyclerview.widget.RecyclerView
-import com.calebgraves.cs2410finalassignment.databinding.JournalListItemBinding
+import com.calebgraves.cs2410finalassignment.databinding.GoalListItemBinding
 import com.calebgraves.cs2410finalassignment.models.Goal
+import java.time.LocalDate
 
 class GoalsAdapter (val goals: ObservableArrayList<Goal>): RecyclerView.Adapter<GoalsAdapter.ViewHolder>() {
 
-    class ViewHolder(val binding: JournalListItemBinding): RecyclerView.ViewHolder(binding.root)
+    class ViewHolder(val binding: GoalListItemBinding): RecyclerView.ViewHolder(binding.root)
 
     init {
         goals.addOnListChangedCallback(object : ObservableList.OnListChangedCallback<ObservableArrayList<Goal>>(){
@@ -55,13 +56,16 @@ class GoalsAdapter (val goals: ObservableArrayList<Goal>): RecyclerView.Adapter<
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = JournalListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = GoalListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val entry = goals[position]
-        holder.binding.journalEntryTitle.text = entry.title
+        val goal = goals[position]
+        holder.binding.eventTitle.text = goal.title.toString()
+        val startDate = "${LocalDate.ofEpochDay(goal.startDate).month.toString().slice(IntRange(0,2))} ${LocalDate.ofEpochDay(goal.startDate).dayOfMonth}"
+        val endDate = "${LocalDate.ofEpochDay(goal.endDate).month.toString().slice(IntRange(0,2))} ${LocalDate.ofEpochDay(goal.endDate).dayOfMonth}"
+        holder.binding.eventDate.text = "${startDate} - ${endDate}"
     }
 
     override fun getItemCount(): Int {

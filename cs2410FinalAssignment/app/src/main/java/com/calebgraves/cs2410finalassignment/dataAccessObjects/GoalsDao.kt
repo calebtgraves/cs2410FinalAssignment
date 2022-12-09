@@ -9,7 +9,7 @@ interface GoalsDao {
     @Insert
     suspend fun createGoal(goal: Goal): Long
 
-    @Query("SELECT * FROM events")
+    @Query("SELECT * FROM goals")
     suspend fun allGoals(): List<Goal>
 
     @Query("SELECT * FROM goals WHERE Id = :id")

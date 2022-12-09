@@ -19,7 +19,11 @@
         android:id="@+id/goalsFragment"
         android:name="com.calebgraves.cs2410finalassignment.GoalsFragment"
         android:label="fragment_goals"
-        tools:layout="@layout/fragment_goals" />
+        tools:layout="@layout/fragment_goals" >
+        <action
+            android:id="@+id/goals_to_goal_creation"
+            app:destination="@id/goalCreationFragment" />
+    </fragment>
     <action
         android:id="@+id/action_global_goalsFragment"
         app:destination="@id/goalsFragment"
@@ -54,4 +58,13 @@
         android:name="com.calebgraves.cs2410finalassignment.JournalEntryFragment"
         android:label="fragment_journal_entry"
         tools:layout="@layout/fragment_journal_entry" />
+    <fragment
+        android:id="@+id/goalCreationFragment"
+        android:name="com.calebgraves.cs2410finalassignment.GoalCreationFragment"
+        android:label="fragment_goal_creation"
+        tools:layout="@layout/fragment_goal_creation" >
+        <action
+            android:id="@+id/goal_creation_to_goals"
+            app:destination="@id/goalsFragment" />
+    </fragment>
 </navigation>

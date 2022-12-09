@@ -4,8 +4,24 @@
         "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_journal_entry.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_goals.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_goals.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_events.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_events.xml"
+    },
+    {
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_goal_creation2.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_goal_creation2.xml"
+    },
+    {
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_calendar.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_goal_creation.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_goal_creation.xml"
     },
     {
         "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\calendar_day_list_item.xml",
@@ -14,6 +30,10 @@
     {
         "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_settings.xml",
         "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_goal_creation.xml",
+        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_goal_creation.xml"
     },
     {
         "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_goals.xml",
@@ -28,16 +48,8 @@
         "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\journal_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_journal.xml",
         "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_journal.xml"
-    },
-    {
-        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_calendar.xml",
-        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_calendar.xml"
     },
     {
         "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\event_list_item.xml",

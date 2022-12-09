@@ -11,6 +11,7 @@ import java.time.LocalDateTime
 import java.time.ZoneOffset
 
 class JournalAdapter (val entries: ObservableArrayList<JournalEntry>): RecyclerView.Adapter<JournalAdapter.ViewHolder>() {
+
     class ViewHolder(val binding: JournalListItemBinding): RecyclerView.ViewHolder(binding.root)
 
     init {

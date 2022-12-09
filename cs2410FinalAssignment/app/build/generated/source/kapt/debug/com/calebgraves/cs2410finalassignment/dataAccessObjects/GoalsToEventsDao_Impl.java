@@ -63,7 +63,7 @@ public final class GoalsToEventsDao_Impl implements GoalsToEventsDao {
 
   @Override
   public Object createCoupler(final GoalEventCoupler coupler,
-      final Continuation<? super Unit> continuation) {
+      final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -76,12 +76,12 @@ public final class GoalsToEventsDao_Impl implements GoalsToEventsDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
   public Object deleteCoupler(final GoalEventCoupler coupler,
-      final Continuation<? super Unit> continuation) {
+      final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -94,11 +94,11 @@ public final class GoalsToEventsDao_Impl implements GoalsToEventsDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
-  public Object allCouplers(final Continuation<? super List<GoalEventCoupler>> continuation) {
+  public Object allCouplers(final Continuation<? super List<GoalEventCoupler>> arg0) {
     final String _sql = "SELECT * FROM goaleventcoupler";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
@@ -125,11 +125,11 @@ public final class GoalsToEventsDao_Impl implements GoalsToEventsDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, arg0);
   }
 
   @Override
-  public Object goalsForEvent(final long id, final Continuation<? super List<Long>> continuation) {
+  public Object goalsForEvent(final long id, final Continuation<? super List<Long>> arg1) {
     final String _sql = "SELECT goalId FROM GoalEventCoupler WHERE eventId = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -156,11 +156,11 @@ public final class GoalsToEventsDao_Impl implements GoalsToEventsDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
-  public Object eventsForGoal(final long id, final Continuation<? super List<Long>> continuation) {
+  public Object eventsForGoal(final long id, final Continuation<? super List<Long>> arg1) {
     final String _sql = "SELECT eventId FROM GoalEventCoupler WHERE goalId = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -187,7 +187,7 @@ public final class GoalsToEventsDao_Impl implements GoalsToEventsDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   public static List<Class<?>> getRequiredConverters() {

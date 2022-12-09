@@ -160,7 +160,7 @@ public final class GoalsDao_Impl implements GoalsDao {
 
   @Override
   public Object allGoals(final Continuation<? super List<Goal>> continuation) {
-    final String _sql = "SELECT * FROM events";
+    final String _sql = "SELECT * FROM goals";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
     return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<List<Goal>>() {

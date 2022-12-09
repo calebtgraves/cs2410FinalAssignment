@@ -34,18 +34,18 @@ public final class GoalsAdapter extends androidx.recyclerview.widget.RecyclerVie
         return 0;
     }
     
-    @kotlin.Metadata(mv = {1, 7, 1}, k = 1, d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\u0007"}, d2 = {"Lcom/calebgraves/cs2410finalassignment/Adapters/GoalsAdapter$ViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "binding", "Lcom/calebgraves/cs2410finalassignment/databinding/JournalListItemBinding;", "(Lcom/calebgraves/cs2410finalassignment/databinding/JournalListItemBinding;)V", "getBinding", "()Lcom/calebgraves/cs2410finalassignment/databinding/JournalListItemBinding;", "app_debug"})
+    @kotlin.Metadata(mv = {1, 7, 1}, k = 1, d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\u0007"}, d2 = {"Lcom/calebgraves/cs2410finalassignment/Adapters/GoalsAdapter$ViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "binding", "Lcom/calebgraves/cs2410finalassignment/databinding/GoalListItemBinding;", "(Lcom/calebgraves/cs2410finalassignment/databinding/GoalListItemBinding;)V", "getBinding", "()Lcom/calebgraves/cs2410finalassignment/databinding/GoalListItemBinding;", "app_debug"})
     public static final class ViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
         @org.jetbrains.annotations.NotNull()
-        private final com.calebgraves.cs2410finalassignment.databinding.JournalListItemBinding binding = null;
+        private final com.calebgraves.cs2410finalassignment.databinding.GoalListItemBinding binding = null;
         
         public ViewHolder(@org.jetbrains.annotations.NotNull()
-        com.calebgraves.cs2410finalassignment.databinding.JournalListItemBinding binding) {
+        com.calebgraves.cs2410finalassignment.databinding.GoalListItemBinding binding) {
             super(null);
         }
         
         @org.jetbrains.annotations.NotNull()
-        public final com.calebgraves.cs2410finalassignment.databinding.JournalListItemBinding getBinding() {
+        public final com.calebgraves.cs2410finalassignment.databinding.GoalListItemBinding getBinding() {
             return null;
         }
     }

@@ -2899,6 +2899,7 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
+id createGoalButton
 id currentPage
 id currentState
 id custom
@@ -2952,6 +2953,7 @@ id enterAlwaysCollapsed
 id entryContentPreview
 id entryDate
 id eventDate
+id eventRecyclerView
 id eventTitle
 id exitUntilCollapsed
 id expand_activities_button
@@ -2977,9 +2979,15 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id goalCategoryField
+id goalCreationFragment
+id goalDescriptionField
 id goalRecyclerView
+id goalTitleField
+id goal_creation_to_goals
 id goalsFragment
 id goalsIcon
+id goals_to_goal_creation
 id gone
 id graph
 id graph_wrap
@@ -3253,7 +3261,14 @@ id textView27
 id textView28
 id textView29
 id textView3
+id textView30
+id textView31
+id textView32
+id textView33
+id textView34
+id textView35
 id textView4
+id textView5
 id textView6
 id textView7
 id textView8
@@ -3453,6 +3468,8 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout event_list_item
 layout fragment_calendar
+layout fragment_events
+layout fragment_goal_creation
 layout fragment_goals
 layout fragment_journal
 layout fragment_journal_entry
