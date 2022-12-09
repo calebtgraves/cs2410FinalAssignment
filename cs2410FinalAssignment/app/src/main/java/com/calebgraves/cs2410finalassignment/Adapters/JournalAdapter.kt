@@ -7,6 +7,7 @@ import androidx.databinding.ObservableList
 import androidx.recyclerview.widget.RecyclerView
 import com.calebgraves.cs2410finalassignment.databinding.JournalListItemBinding
 import com.calebgraves.cs2410finalassignment.models.JournalEntry
+import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 
@@ -65,7 +66,7 @@ class JournalAdapter (val entries: ObservableArrayList<JournalEntry>): RecyclerV
         val entry = entries[position]
         holder.binding.journalEntryTitle.text = entry.title
         holder.binding.entryContentPreview.text = entry.content
-        holder.binding.entryDate.text = entry.date.toString()
+        holder.binding.entryDate.text = LocalDate.ofEpochDay(entry.date).toString()
     }
 
     override fun getItemCount(): Int {

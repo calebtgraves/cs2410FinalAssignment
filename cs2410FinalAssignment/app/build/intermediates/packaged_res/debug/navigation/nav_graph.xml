@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_journalFragment_to_journalEntryFragment"
             app:destination="@id/journalEntryFragment" />
+        <action
+            android:id="@+id/journal_to_journal_entry_creation"
+            app:destination="@id/journalEntryCreationFragment" />
     </fragment>
     <action
         android:id="@+id/action_global_journalFragment"
@@ -66,5 +69,14 @@
         <action
             android:id="@+id/goal_creation_to_goals"
             app:destination="@id/goalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/journalEntryCreationFragment"
+        android:name="com.calebgraves.cs2410finalassignment.JournalEntryCreationFragment"
+        android:label="fragment_journal_entry_creation"
+        tools:layout="@layout/fragment_journal_entry_creation" >
+        <action
+            android:id="@+id/journal_entry_creation_to_journal"
+            app:destination="@id/journalFragment" />
     </fragment>
 </navigation>

@@ -66,6 +66,9 @@ class GoalsAdapter (val goals: ObservableArrayList<Goal>): RecyclerView.Adapter<
         val startDate = "${LocalDate.ofEpochDay(goal.startDate).month.toString().slice(IntRange(0,2))} ${LocalDate.ofEpochDay(goal.startDate).dayOfMonth}"
         val endDate = "${LocalDate.ofEpochDay(goal.endDate).month.toString().slice(IntRange(0,2))} ${LocalDate.ofEpochDay(goal.endDate).dayOfMonth}"
         holder.binding.eventDate.text = "${startDate} - ${endDate}"
+//        holder.binding.mainLayout.setOnClickListener(
+//
+//        )
     }
 
     override fun getItemCount(): Int {

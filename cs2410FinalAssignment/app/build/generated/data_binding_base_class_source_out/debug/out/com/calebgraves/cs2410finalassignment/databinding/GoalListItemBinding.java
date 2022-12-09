@@ -25,11 +25,15 @@ public final class GoalListItemBinding implements ViewBinding {
   @NonNull
   public final TextView eventTitle;
 
+  @NonNull
+  public final ConstraintLayout mainLayout;
+
   private GoalListItemBinding(@NonNull ConstraintLayout rootView, @NonNull TextView eventDate,
-      @NonNull TextView eventTitle) {
+      @NonNull TextView eventTitle, @NonNull ConstraintLayout mainLayout) {
     this.rootView = rootView;
     this.eventDate = eventDate;
     this.eventTitle = eventTitle;
+    this.mainLayout = mainLayout;
   }
 
   @Override
@@ -71,7 +75,10 @@ public final class GoalListItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new GoalListItemBinding((ConstraintLayout) rootView, eventDate, eventTitle);
+      ConstraintLayout mainLayout = (ConstraintLayout) rootView;
+
+      return new GoalListItemBinding((ConstraintLayout) rootView, eventDate, eventTitle,
+          mainLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -51,7 +51,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_goalCreationFragment_to_goalsFragment">
+                            <entry key="goal_creation_to_goals">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -72,7 +72,28 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_goalsFragment_to_goalCreationFragment">
+                            <entry key="goals_to_goal_creation">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="journalEntryCreationFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="454" />
+                            <option name="y" value="-339" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="journal_entry_creation_to_journal">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -87,8 +108,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="263" />
-                            <option name="y" value="-418" />
+                            <option name="x" value="468" />
+                            <option name="y" value="398" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -106,6 +127,11 @@
                         <option name="myPositions">
                           <map>
                             <entry key="action_journalFragment_to_journalEntryFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="journal_to_journal_entry_creation">
                               <value>
                                 <LayoutPositions />
                               </value>
