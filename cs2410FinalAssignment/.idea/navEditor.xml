@@ -66,8 +66,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-9" />
-                            <option name="y" value="-604" />
+                            <option name="x" value="278" />
+                            <option name="y" value="-695" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -93,12 +93,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_goalFragment_to_goalsFragment">
+                            <entry key="goal_to_goal_editor">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="goal_to_goal_editor">
+                            <entry key="goal_to_goals">
                               <value>
                                 <LayoutPositions />
                               </value>

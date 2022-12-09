@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
 import com.calebgraves.cs2410finalassignment.R
 import com.calebgraves.cs2410finalassignment.databinding.FragmentGoalBinding
 import com.calebgraves.cs2410finalassignment.viewModels.GoalViewModel
@@ -28,6 +30,15 @@ class GoalFragment : Fragment() {
             binding.goalStartDateField.text = LocalDate.ofEpochDay(goal.startDate).toString()
             binding.goalEndDateField.text = LocalDate.ofEpochDay(goal.endDate).toString()
             binding.goalDescriptionField.text = goal.description
+            binding.editGoal.setOnClickListener {
+
+                val bundle = bundleOf("goal" as)
+                findNavController().navigate(R.id.goal_to_goal_editor)
+            }
+        }
+
+        binding.backToGoals.setOnClickListener {
+            findNavController().navigate(R.id.goal_to_goals)
         }
 
         return binding.root
