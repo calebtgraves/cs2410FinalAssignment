@@ -97,7 +97,7 @@ public final class JournalEntriesDao_Impl implements JournalEntriesDao {
 
   @Override
   public Object createJournalEntry(final JournalEntry entry,
-      final Continuation<? super Long> arg1) {
+      final Continuation<? super Long> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Long>() {
       @Override
       public Long call() throws Exception {
@@ -110,12 +110,12 @@ public final class JournalEntriesDao_Impl implements JournalEntriesDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, continuation);
   }
 
   @Override
   public Object deleteJournalEntry(final JournalEntry entry,
-      final Continuation<? super Unit> arg1) {
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -128,12 +128,12 @@ public final class JournalEntriesDao_Impl implements JournalEntriesDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, continuation);
   }
 
   @Override
   public Object updateJournalEntry(final JournalEntry entry,
-      final Continuation<? super Unit> arg1) {
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -146,11 +146,11 @@ public final class JournalEntriesDao_Impl implements JournalEntriesDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, continuation);
   }
 
   @Override
-  public Object allJournalEntries(final Continuation<? super List<JournalEntry>> arg0) {
+  public Object allJournalEntries(final Continuation<? super List<JournalEntry>> continuation) {
     final String _sql = "SELECT * FROM journalEntries";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
@@ -191,7 +191,7 @@ public final class JournalEntriesDao_Impl implements JournalEntriesDao {
           _statement.release();
         }
       }
-    }, arg0);
+    }, continuation);
   }
 
   public static List<Class<?>> getRequiredConverters() {

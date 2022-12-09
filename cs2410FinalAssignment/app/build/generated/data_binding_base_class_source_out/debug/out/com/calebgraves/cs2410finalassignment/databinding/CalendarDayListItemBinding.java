@@ -171,6 +171,9 @@ public final class CalendarDayListItemBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout9;
 
   @NonNull
+  public final ConstraintLayout event;
+
+  @NonNull
   public final ConstraintLayout scrollConstraintLayout;
 
   @NonNull
@@ -280,16 +283,17 @@ public final class CalendarDayListItemBinding implements ViewBinding {
       @NonNull ConstraintLayout constraintLayout55, @NonNull ConstraintLayout constraintLayout56,
       @NonNull ConstraintLayout constraintLayout6, @NonNull ConstraintLayout constraintLayout7,
       @NonNull ConstraintLayout constraintLayout8, @NonNull ConstraintLayout constraintLayout9,
-      @NonNull ConstraintLayout scrollConstraintLayout, @NonNull ConstraintLayout scrollParent,
-      @NonNull ScrollView scrollView, @NonNull ConstraintLayout separationBar,
-      @NonNull TextView textView10, @NonNull TextView textView11, @NonNull TextView textView12,
-      @NonNull TextView textView13, @NonNull TextView textView14, @NonNull TextView textView15,
-      @NonNull TextView textView16, @NonNull TextView textView17, @NonNull TextView textView18,
-      @NonNull TextView textView19, @NonNull TextView textView20, @NonNull TextView textView21,
-      @NonNull TextView textView22, @NonNull TextView textView23, @NonNull TextView textView24,
-      @NonNull TextView textView25, @NonNull TextView textView26, @NonNull TextView textView27,
-      @NonNull TextView textView28, @NonNull TextView textView29, @NonNull TextView textView6,
-      @NonNull TextView textView7, @NonNull TextView textView8, @NonNull TextView textView9) {
+      @NonNull ConstraintLayout event, @NonNull ConstraintLayout scrollConstraintLayout,
+      @NonNull ConstraintLayout scrollParent, @NonNull ScrollView scrollView,
+      @NonNull ConstraintLayout separationBar, @NonNull TextView textView10,
+      @NonNull TextView textView11, @NonNull TextView textView12, @NonNull TextView textView13,
+      @NonNull TextView textView14, @NonNull TextView textView15, @NonNull TextView textView16,
+      @NonNull TextView textView17, @NonNull TextView textView18, @NonNull TextView textView19,
+      @NonNull TextView textView20, @NonNull TextView textView21, @NonNull TextView textView22,
+      @NonNull TextView textView23, @NonNull TextView textView24, @NonNull TextView textView25,
+      @NonNull TextView textView26, @NonNull TextView textView27, @NonNull TextView textView28,
+      @NonNull TextView textView29, @NonNull TextView textView6, @NonNull TextView textView7,
+      @NonNull TextView textView8, @NonNull TextView textView9) {
     this.rootView = rootView;
     this.constraintLayout10 = constraintLayout10;
     this.constraintLayout11 = constraintLayout11;
@@ -341,6 +345,7 @@ public final class CalendarDayListItemBinding implements ViewBinding {
     this.constraintLayout7 = constraintLayout7;
     this.constraintLayout8 = constraintLayout8;
     this.constraintLayout9 = constraintLayout9;
+    this.event = event;
     this.scrollConstraintLayout = scrollConstraintLayout;
     this.scrollParent = scrollParent;
     this.scrollView = scrollView;
@@ -698,6 +703,12 @@ public final class CalendarDayListItemBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.event;
+      ConstraintLayout event = ViewBindings.findChildViewById(rootView, id);
+      if (event == null) {
+        break missingId;
+      }
+
       id = R.id.scrollConstraintLayout;
       ConstraintLayout scrollConstraintLayout = ViewBindings.findChildViewById(rootView, id);
       if (scrollConstraintLayout == null) {
@@ -875,7 +886,7 @@ public final class CalendarDayListItemBinding implements ViewBinding {
           constraintLayout49, constraintLayout5, constraintLayout50, constraintLayout51,
           constraintLayout52, constraintLayout53, constraintLayout54, constraintLayout55,
           constraintLayout56, constraintLayout6, constraintLayout7, constraintLayout8,
-          constraintLayout9, scrollConstraintLayout, scrollParent, scrollView, separationBar,
+          constraintLayout9, event, scrollConstraintLayout, scrollParent, scrollView, separationBar,
           textView10, textView11, textView12, textView13, textView14, textView15, textView16,
           textView17, textView18, textView19, textView20, textView21, textView22, textView23,
           textView24, textView25, textView26, textView27, textView28, textView29, textView6,
