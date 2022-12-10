@@ -15,6 +15,7 @@ class GoalsViewModel: ViewModel() {
 
     private fun loadGoals() {
         viewModelScope.launch {
+            goals.clear()
             val loadedGoals = GoalsRepository.getAllGoals()
             goals.addAll(loadedGoals)
         }

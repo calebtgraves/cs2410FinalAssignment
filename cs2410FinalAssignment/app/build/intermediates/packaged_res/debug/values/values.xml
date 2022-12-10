@@ -8,7 +8,7 @@
     <color name="whale_blue">#B5BDC3</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="starting_point">1285dp</dimen>
-    <string name="app_name">cs2410FinalAssignment</string>
+    <string name="app_name">Compass</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <style name="Theme.Cs2410FinalAssignment" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

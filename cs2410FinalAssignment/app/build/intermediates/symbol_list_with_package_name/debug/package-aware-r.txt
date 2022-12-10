@@ -2797,6 +2797,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backToGoals
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2903,8 +2904,6 @@ id cos
 id counterclockwise
 id cradle
 id createGoal
-id createGoalButton
-id createGoalButton2
 id currentPage
 id currentState
 id custom
@@ -2948,6 +2947,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editGoal
 id editJournalEntry
 id edit_query
 id elastic
@@ -2987,8 +2987,10 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id goalCategoryField
+id goalCreationError
 id goalCreationFragment
 id goalDescriptionField
+id goalEditError
 id goalEditor
 id goalEndDateField
 id goalFragment
@@ -3032,6 +3034,7 @@ id inward
 id italic
 id item_touch_helper_previous_elevation
 id journalEntryCreationContent
+id journalEntryCreationError
 id journalEntryCreationFragment
 id journalEntryCreationMainLayout
 id journalEntryCreationTitle
@@ -3173,6 +3176,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id saveGoalButton
 id saveJournalEntry
 id save_non_transition_alpha
 id save_overlay_view

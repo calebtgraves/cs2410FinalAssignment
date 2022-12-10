@@ -35,7 +35,7 @@ class GoalsAdapter (val goals: ObservableArrayList<Goal>, navController: NavCont
                 positionStart: Int,
                 itemCount: Int
             ) {
-                notifyItemInserted(positionStart)
+                notifyItemRangeInserted(positionStart, itemCount)
             }
 
             override fun onItemRangeMoved(

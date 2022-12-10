@@ -29,14 +29,22 @@ class GoalCreationFragment : Fragment() {
 
         }
 
+        viewModel.errorMessage.observe(viewLifecycleOwner) {
+            binding.goalCreationError.text = viewModel.errorMessage.value
+        }
+
         binding.createGoal.setOnClickListener {
             val title = binding.goalTitleField.text.toString()
             val category = binding.goalCategoryField.text.toString()
             val description =  binding.goalDescriptionField.text.toString()
             viewModel.createGoal(title = title, category = category, description = description, startDate = LocalDate.now().toEpochDay(), endDate = LocalDate.now().toEpochDay())
-            findNavController().navigate(R.id.goal_creation_to_goals)
         }
 
+        viewModel.done.observe(viewLifecycleOwner) {
+            if (it) {
+                findNavController().navigate(R.id.goal_creation_to_goals)
+            }
+        }
 
         return binding.root
     }

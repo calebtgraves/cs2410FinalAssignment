@@ -21,10 +21,10 @@ public final class FragmentGoalBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button createGoal;
+  public final Button backToGoals;
 
   @NonNull
-  public final Button createGoalButton2;
+  public final Button editGoal;
 
   @NonNull
   public final TextView goalCategoryField;
@@ -56,15 +56,15 @@ public final class FragmentGoalBinding implements ViewBinding {
   @NonNull
   public final TextView textView5;
 
-  private FragmentGoalBinding(@NonNull ConstraintLayout rootView, @NonNull Button createGoal,
-      @NonNull Button createGoalButton2, @NonNull TextView goalCategoryField,
+  private FragmentGoalBinding(@NonNull ConstraintLayout rootView, @NonNull Button backToGoals,
+      @NonNull Button editGoal, @NonNull TextView goalCategoryField,
       @NonNull TextView goalDescriptionField, @NonNull TextView goalEndDateField,
       @NonNull TextView goalStartDateField, @NonNull TextView goalTitleField,
       @NonNull TextView textView30, @NonNull TextView textView31, @NonNull TextView textView32,
       @NonNull TextView textView33, @NonNull TextView textView5) {
     this.rootView = rootView;
-    this.createGoal = createGoal;
-    this.createGoalButton2 = createGoalButton2;
+    this.backToGoals = backToGoals;
+    this.editGoal = editGoal;
     this.goalCategoryField = goalCategoryField;
     this.goalDescriptionField = goalDescriptionField;
     this.goalEndDateField = goalEndDateField;
@@ -104,15 +104,15 @@ public final class FragmentGoalBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.createGoal;
-      Button createGoal = ViewBindings.findChildViewById(rootView, id);
-      if (createGoal == null) {
+      id = R.id.backToGoals;
+      Button backToGoals = ViewBindings.findChildViewById(rootView, id);
+      if (backToGoals == null) {
         break missingId;
       }
 
-      id = R.id.createGoalButton2;
-      Button createGoalButton2 = ViewBindings.findChildViewById(rootView, id);
-      if (createGoalButton2 == null) {
+      id = R.id.editGoal;
+      Button editGoal = ViewBindings.findChildViewById(rootView, id);
+      if (editGoal == null) {
         break missingId;
       }
 
@@ -176,7 +176,7 @@ public final class FragmentGoalBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentGoalBinding((ConstraintLayout) rootView, createGoal, createGoalButton2,
+      return new FragmentGoalBinding((ConstraintLayout) rootView, backToGoals, editGoal,
           goalCategoryField, goalDescriptionField, goalEndDateField, goalStartDateField,
           goalTitleField, textView30, textView31, textView32, textView33, textView5);
     }

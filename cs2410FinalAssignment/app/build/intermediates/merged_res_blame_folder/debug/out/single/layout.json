@@ -1,70 +1,74 @@
 [
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/journal_list_item.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/journal_list_item.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_journal_entry.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_journal_entry.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/calendar_day_list_item.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/calendar_day_list_item.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_journal_entry_creation.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_journal_entry_creation.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/date_selector.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/date_selector.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_goal.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_goal.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_settings.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_settings.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_goal_editor.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_goal_editor.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/activity_main.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/activity_main.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_journal_entry_creation.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_journal_entry_creation.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_events.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_events.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_journal_entry.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_journal_entry.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_calendar.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_calendar.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/event_list_item.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/event_list_item.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_goal_creation.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_goal_creation.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/goal_list_item.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/goal_list_item.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\time_selector.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\time_selector.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_goals.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_goals.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_goal_creation.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_goal_creation.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\calendar_day_list_item.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\calendar_day_list_item.xml"
     },
     {
         "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_goal_editor.xml",
         "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_goal_editor.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/time_selector.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/time_selector.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_goals.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_goals.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_events.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_events.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\journal_list_item.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\journal_list_item.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_journal.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_journal.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\goal_list_item.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\goal_list_item.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_calendar.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_calendar.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\fragment_journal.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\fragment_journal.xml"
     },
     {
-        "merged": "com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:/layout/fragment_goal.xml",
-        "source": "com.calebgraves.cs2410finalassignment.app-main-52:/layout/fragment_goal.xml"
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\date_selector.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\date_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-mergeDebugResources-49:\\layout\\event_list_item.xml",
+        "source": "C:\\Users\\zacha\\.gradle\\daemon\\7.3.3\\com.calebgraves.cs2410finalassignment.app-main-52:\\layout\\event_list_item.xml"
     }
 ]

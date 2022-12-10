@@ -33,6 +33,7 @@ id action_journalFragment_to_journalEntryFragment
 id addGoal
 id addJournalEntry
 id addNewEvent
+id backToGoals
 id button
 id calendarFragment
 id calendarIcon
@@ -93,13 +94,12 @@ id constraintLayout7
 id constraintLayout8
 id constraintLayout9
 id createGoal
-id createGoalButton
-id createGoalButton2
 id currentPage
 id datePicker
 id dividingBarLeft
 id dividingBarMiddle
 id dividingBarRight
+id editGoal
 id editJournalEntry
 id entryContentPreview
 id entryDate
@@ -110,8 +110,10 @@ id eventTitle
 id fragmentContainerView
 id frameLayout
 id goalCategoryField
+id goalCreationError
 id goalCreationFragment
 id goalDescriptionField
+id goalEditError
 id goalEditor
 id goalEndDateField
 id goalFragment
@@ -128,6 +130,7 @@ id goals_to_goal
 id goals_to_goal_creation
 id imageView
 id journalEntryCreationContent
+id journalEntryCreationError
 id journalEntryCreationFragment
 id journalEntryCreationMainLayout
 id journalEntryCreationTitle
@@ -144,6 +147,7 @@ id journal_to_journal_entry_creation
 id mainLayout
 id nav_graph
 id recyclerView
+id saveGoalButton
 id saveJournalEntry
 id scrollConstraintLayout
 id scrollParent

@@ -31,9 +31,8 @@ class GoalFragment : Fragment() {
             binding.goalEndDateField.text = LocalDate.ofEpochDay(goal.endDate).toString()
             binding.goalDescriptionField.text = goal.description
             binding.editGoal.setOnClickListener {
-
-                val bundle = bundleOf("goal" as)
-                findNavController().navigate(R.id.goal_to_goal_editor)
+                val bundle = bundleOf("goalId" to goal.id, "goalTitle" to goal.title, "goalCategory" to goal.category, "goalStartDate" to goal.startDate, "goalEndDate" to goal.endDate, "goalDescription" to goal.description)
+                findNavController().navigate(R.id.goal_to_goal_editor, bundle)
             }
         }
 

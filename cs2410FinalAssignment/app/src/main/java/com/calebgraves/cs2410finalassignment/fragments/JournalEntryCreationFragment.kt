@@ -23,11 +23,19 @@ class JournalEntryCreationFragment : Fragment() {
         val viewModel = JournalCreationViewModel()
         binding.journalEntryDate.text = LocalDate.now().toString()
 
-        binding.saveJournalEntry.setOnClickListener {
-            viewModel.createJournalEntry(LocalDate.now().toEpochDay(), binding.journalEntryCreationTitle.text.toString(), binding.journalEntryCreationContent.text.toString())
-            findNavController().navigate(R.id.journal_entry_creation_to_journal)
+        viewModel.errorMessage.observe(viewLifecycleOwner) {
+            binding.journalEntryCreationError.text = viewModel.errorMessage.value
         }
 
+        binding.saveJournalEntry.setOnClickListener {
+            viewModel.createJournalEntry(LocalDate.now().toEpochDay(), binding.journalEntryCreationTitle.text.toString(), binding.journalEntryCreationContent.text.toString())
+        }
+
+        viewModel.done.observe(viewLifecycleOwner) {
+            if (it) {
+                findNavController().navigate(R.id.journal_entry_creation_to_journal)
+            }
+        }
         return binding.root
     }
 }
