@@ -10,11 +10,11 @@ import kotlinx.coroutines.launch
 class GoalsViewModel: ViewModel() {
     val goals = ObservableArrayList<Goal>()
     init {
-        loadGoals()
     }
 
-    private fun loadGoals() {
-        viewModelScope.launch {
+    fun loadGoals() {
+        goals.clear()
+        viewModelScope.launch{
             goals.clear()
             val loadedGoals = GoalsRepository.getAllGoals()
             goals.addAll(loadedGoals)

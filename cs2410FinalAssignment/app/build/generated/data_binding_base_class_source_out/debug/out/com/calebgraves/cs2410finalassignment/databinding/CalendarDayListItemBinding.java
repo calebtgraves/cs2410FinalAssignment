@@ -246,6 +246,9 @@ public final class CalendarDayListItemBinding implements ViewBinding {
   public final TextView textView29;
 
   @NonNull
+  public final TextView textView5;
+
+  @NonNull
   public final TextView textView6;
 
   @NonNull
@@ -292,8 +295,8 @@ public final class CalendarDayListItemBinding implements ViewBinding {
       @NonNull TextView textView20, @NonNull TextView textView21, @NonNull TextView textView22,
       @NonNull TextView textView23, @NonNull TextView textView24, @NonNull TextView textView25,
       @NonNull TextView textView26, @NonNull TextView textView27, @NonNull TextView textView28,
-      @NonNull TextView textView29, @NonNull TextView textView6, @NonNull TextView textView7,
-      @NonNull TextView textView8, @NonNull TextView textView9) {
+      @NonNull TextView textView29, @NonNull TextView textView5, @NonNull TextView textView6,
+      @NonNull TextView textView7, @NonNull TextView textView8, @NonNull TextView textView9) {
     this.rootView = rootView;
     this.constraintLayout10 = constraintLayout10;
     this.constraintLayout11 = constraintLayout11;
@@ -370,6 +373,7 @@ public final class CalendarDayListItemBinding implements ViewBinding {
     this.textView27 = textView27;
     this.textView28 = textView28;
     this.textView29 = textView29;
+    this.textView5 = textView5;
     this.textView6 = textView6;
     this.textView7 = textView7;
     this.textView8 = textView8;
@@ -849,6 +853,12 @@ public final class CalendarDayListItemBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
+        break missingId;
+      }
+
       id = R.id.textView6;
       TextView textView6 = ViewBindings.findChildViewById(rootView, id);
       if (textView6 == null) {
@@ -889,8 +899,8 @@ public final class CalendarDayListItemBinding implements ViewBinding {
           constraintLayout9, event, scrollConstraintLayout, scrollParent, scrollView, separationBar,
           textView10, textView11, textView12, textView13, textView14, textView15, textView16,
           textView17, textView18, textView19, textView20, textView21, textView22, textView23,
-          textView24, textView25, textView26, textView27, textView28, textView29, textView6,
-          textView7, textView8, textView9);
+          textView24, textView25, textView26, textView27, textView28, textView29, textView5,
+          textView6, textView7, textView8, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

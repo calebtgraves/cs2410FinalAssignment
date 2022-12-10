@@ -22,9 +22,10 @@ class GoalsFragment : Fragment() {
         val binding = FragmentGoalsBinding.inflate(inflater, container, false)
         val viewModel = GoalsViewModel()
 
+        viewModel.loadGoals()
         binding.goalRecyclerView.adapter = GoalsAdapter(viewModel.goals, findNavController())
         binding.goalRecyclerView.layoutManager = LinearLayoutManager(context)
-
+        println("ASSDFADSGDSFDSGF")
         binding.addGoal.setOnClickListener {
             findNavController().navigate(R.id.goals_to_goal_creation)
         }

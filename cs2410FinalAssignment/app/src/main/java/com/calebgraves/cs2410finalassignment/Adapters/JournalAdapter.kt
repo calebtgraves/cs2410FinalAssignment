@@ -59,6 +59,7 @@ class JournalAdapter (val entries: ObservableArrayList<JournalEntry>): RecyclerV
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = JournalListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+
         return ViewHolder(binding)
     }
 

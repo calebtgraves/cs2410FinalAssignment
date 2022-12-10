@@ -24,57 +24,53 @@ public final class FragmentGoalBinding implements ViewBinding {
   public final Button backToGoals;
 
   @NonNull
+  public final ConstraintLayout constraintLayout57;
+
+  @NonNull
   public final Button editGoal;
 
   @NonNull
   public final TextView goalCategoryField;
 
   @NonNull
+  public final TextView goalCreationError;
+
+  @NonNull
   public final TextView goalDescriptionField;
 
   @NonNull
-  public final TextView goalEndDateField;
+  public final Button goalEndDateField;
 
   @NonNull
-  public final TextView goalStartDateField;
+  public final Button goalStartDateField;
 
   @NonNull
   public final TextView goalTitleField;
 
   @NonNull
-  public final TextView textView30;
-
-  @NonNull
   public final TextView textView31;
 
   @NonNull
-  public final TextView textView32;
-
-  @NonNull
-  public final TextView textView33;
-
-  @NonNull
-  public final TextView textView5;
+  public final TextView textView34;
 
   private FragmentGoalBinding(@NonNull ConstraintLayout rootView, @NonNull Button backToGoals,
-      @NonNull Button editGoal, @NonNull TextView goalCategoryField,
-      @NonNull TextView goalDescriptionField, @NonNull TextView goalEndDateField,
-      @NonNull TextView goalStartDateField, @NonNull TextView goalTitleField,
-      @NonNull TextView textView30, @NonNull TextView textView31, @NonNull TextView textView32,
-      @NonNull TextView textView33, @NonNull TextView textView5) {
+      @NonNull ConstraintLayout constraintLayout57, @NonNull Button editGoal,
+      @NonNull TextView goalCategoryField, @NonNull TextView goalCreationError,
+      @NonNull TextView goalDescriptionField, @NonNull Button goalEndDateField,
+      @NonNull Button goalStartDateField, @NonNull TextView goalTitleField,
+      @NonNull TextView textView31, @NonNull TextView textView34) {
     this.rootView = rootView;
     this.backToGoals = backToGoals;
+    this.constraintLayout57 = constraintLayout57;
     this.editGoal = editGoal;
     this.goalCategoryField = goalCategoryField;
+    this.goalCreationError = goalCreationError;
     this.goalDescriptionField = goalDescriptionField;
     this.goalEndDateField = goalEndDateField;
     this.goalStartDateField = goalStartDateField;
     this.goalTitleField = goalTitleField;
-    this.textView30 = textView30;
     this.textView31 = textView31;
-    this.textView32 = textView32;
-    this.textView33 = textView33;
-    this.textView5 = textView5;
+    this.textView34 = textView34;
   }
 
   @Override
@@ -110,6 +106,12 @@ public final class FragmentGoalBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.constraintLayout57;
+      ConstraintLayout constraintLayout57 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout57 == null) {
+        break missingId;
+      }
+
       id = R.id.editGoal;
       Button editGoal = ViewBindings.findChildViewById(rootView, id);
       if (editGoal == null) {
@@ -122,6 +124,12 @@ public final class FragmentGoalBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.goalCreationError;
+      TextView goalCreationError = ViewBindings.findChildViewById(rootView, id);
+      if (goalCreationError == null) {
+        break missingId;
+      }
+
       id = R.id.goalDescriptionField;
       TextView goalDescriptionField = ViewBindings.findChildViewById(rootView, id);
       if (goalDescriptionField == null) {
@@ -129,13 +137,13 @@ public final class FragmentGoalBinding implements ViewBinding {
       }
 
       id = R.id.goalEndDateField;
-      TextView goalEndDateField = ViewBindings.findChildViewById(rootView, id);
+      Button goalEndDateField = ViewBindings.findChildViewById(rootView, id);
       if (goalEndDateField == null) {
         break missingId;
       }
 
       id = R.id.goalStartDateField;
-      TextView goalStartDateField = ViewBindings.findChildViewById(rootView, id);
+      Button goalStartDateField = ViewBindings.findChildViewById(rootView, id);
       if (goalStartDateField == null) {
         break missingId;
       }
@@ -146,39 +154,21 @@ public final class FragmentGoalBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView30;
-      TextView textView30 = ViewBindings.findChildViewById(rootView, id);
-      if (textView30 == null) {
-        break missingId;
-      }
-
       id = R.id.textView31;
       TextView textView31 = ViewBindings.findChildViewById(rootView, id);
       if (textView31 == null) {
         break missingId;
       }
 
-      id = R.id.textView32;
-      TextView textView32 = ViewBindings.findChildViewById(rootView, id);
-      if (textView32 == null) {
+      id = R.id.textView34;
+      TextView textView34 = ViewBindings.findChildViewById(rootView, id);
+      if (textView34 == null) {
         break missingId;
       }
 
-      id = R.id.textView33;
-      TextView textView33 = ViewBindings.findChildViewById(rootView, id);
-      if (textView33 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView5;
-      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
-      if (textView5 == null) {
-        break missingId;
-      }
-
-      return new FragmentGoalBinding((ConstraintLayout) rootView, backToGoals, editGoal,
-          goalCategoryField, goalDescriptionField, goalEndDateField, goalStartDateField,
-          goalTitleField, textView30, textView31, textView32, textView33, textView5);
+      return new FragmentGoalBinding((ConstraintLayout) rootView, backToGoals, constraintLayout57,
+          editGoal, goalCategoryField, goalCreationError, goalDescriptionField, goalEndDateField,
+          goalStartDateField, goalTitleField, textView31, textView34);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

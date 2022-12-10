@@ -39,18 +39,11 @@ public final class FragmentJournalEntryCreationBinding implements ViewBinding {
   @NonNull
   public final Button saveJournalEntry;
 
-  @NonNull
-  public final TextView textView36;
-
-  @NonNull
-  public final TextView textView37;
-
   private FragmentJournalEntryCreationBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText journalEntryCreationContent, @NonNull TextView journalEntryCreationError,
       @NonNull ConstraintLayout journalEntryCreationMainLayout,
       @NonNull EditText journalEntryCreationTitle, @NonNull TextView journalEntryDate,
-      @NonNull Button saveJournalEntry, @NonNull TextView textView36,
-      @NonNull TextView textView37) {
+      @NonNull Button saveJournalEntry) {
     this.rootView = rootView;
     this.journalEntryCreationContent = journalEntryCreationContent;
     this.journalEntryCreationError = journalEntryCreationError;
@@ -58,8 +51,6 @@ public final class FragmentJournalEntryCreationBinding implements ViewBinding {
     this.journalEntryCreationTitle = journalEntryCreationTitle;
     this.journalEntryDate = journalEntryDate;
     this.saveJournalEntry = saveJournalEntry;
-    this.textView36 = textView36;
-    this.textView37 = textView37;
   }
 
   @Override
@@ -121,21 +112,9 @@ public final class FragmentJournalEntryCreationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView36;
-      TextView textView36 = ViewBindings.findChildViewById(rootView, id);
-      if (textView36 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView37;
-      TextView textView37 = ViewBindings.findChildViewById(rootView, id);
-      if (textView37 == null) {
-        break missingId;
-      }
-
       return new FragmentJournalEntryCreationBinding((ConstraintLayout) rootView,
           journalEntryCreationContent, journalEntryCreationError, journalEntryCreationMainLayout,
-          journalEntryCreationTitle, journalEntryDate, saveJournalEntry, textView36, textView37);
+          journalEntryCreationTitle, journalEntryDate, saveJournalEntry);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

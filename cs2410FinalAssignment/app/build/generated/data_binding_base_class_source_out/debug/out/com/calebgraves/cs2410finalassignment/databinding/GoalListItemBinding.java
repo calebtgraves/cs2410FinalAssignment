@@ -20,6 +20,9 @@ public final class GoalListItemBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ConstraintLayout constraintLayout32;
+
+  @NonNull
   public final TextView eventDate;
 
   @NonNull
@@ -28,9 +31,11 @@ public final class GoalListItemBinding implements ViewBinding {
   @NonNull
   public final ConstraintLayout mainLayout;
 
-  private GoalListItemBinding(@NonNull ConstraintLayout rootView, @NonNull TextView eventDate,
+  private GoalListItemBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout constraintLayout32, @NonNull TextView eventDate,
       @NonNull TextView eventTitle, @NonNull ConstraintLayout mainLayout) {
     this.rootView = rootView;
+    this.constraintLayout32 = constraintLayout32;
     this.eventDate = eventDate;
     this.eventTitle = eventTitle;
     this.mainLayout = mainLayout;
@@ -63,6 +68,12 @@ public final class GoalListItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.constraintLayout32;
+      ConstraintLayout constraintLayout32 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout32 == null) {
+        break missingId;
+      }
+
       id = R.id.eventDate;
       TextView eventDate = ViewBindings.findChildViewById(rootView, id);
       if (eventDate == null) {
@@ -77,8 +88,8 @@ public final class GoalListItemBinding implements ViewBinding {
 
       ConstraintLayout mainLayout = (ConstraintLayout) rootView;
 
-      return new GoalListItemBinding((ConstraintLayout) rootView, eventDate, eventTitle,
-          mainLayout);
+      return new GoalListItemBinding((ConstraintLayout) rootView, constraintLayout32, eventDate,
+          eventTitle, mainLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

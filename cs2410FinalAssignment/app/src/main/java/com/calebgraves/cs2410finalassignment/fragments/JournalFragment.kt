@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.size
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,6 +25,7 @@ class JournalFragment : Fragment() {
 
         binding.journalRecyclerView.adapter = JournalAdapter(viewModel.entries)
         binding.journalRecyclerView.layoutManager = LinearLayoutManager(context)
+        val adapter = binding.journalRecyclerView.adapter
 
         binding.addJournalEntry.setOnClickListener {
             findNavController().navigate(R.id.journal_to_journal_entry_creation)
